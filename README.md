@@ -9,7 +9,7 @@ Goal of this project is to hone my data analysis skills through analysing the CO
 
 ## Technologies Used
 - Google sheets
-- BiqQuery
+- DBeaver
 - Python
 - Pandas
 - NumPy
