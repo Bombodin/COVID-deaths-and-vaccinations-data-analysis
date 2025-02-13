@@ -1,0 +1,82 @@
+/*
+Covid 19 Data Exploration 
+
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+
+*/
+-- Selects the starting data
+
+SELECT
+ location,
+ date,
+ total_cases,
+ new_cases,
+ total_deaths,
+ population 
+FROM `covidproject-450513.Coviddata.coviddeaths`
+ORDER BY 1,2
+
+-- Filters only for results from Finland and shows what percentage of infected people die
+
+SELECT
+ date,
+ total_cases,
+ (total_cases/total_deaths)*100 as deaths_percentage
+FROM `covidproject-450513.Coviddata.coviddeaths`
+where location = "Finland"
+ORDER BY 1,2;
+
+-- Percentage of infected people in Finland
+
+SELECT 
+ date,
+ total_cases,
+ population,
+ total_cases,
+ (total_cases/population)*100 AS infected_percentage
+FROM `covidproject-450513.Coviddata.coviddeaths`
+WHERE location = "Finland"
+ORDER BY 1,2;
+
+-- Countries with highest infection rate compared to population
+
+SELECT
+location,
+population,
+MAX(total_cases) AS peak_infection_count,
+MAX((total_cases/population))*100 AS infected_percentage
+FROM `covidproject-450513.Coviddata.coviddeaths`
+WHERE continent IS NOT null
+GROUP BY location, population
+ORDER BY infected_percentage DESC;
+
+-- Countries by the absolute highest death count 
+
+SELECT
+location,
+MAX(total_deaths) AS peak_death_count,
+FROM `covidproject-450513.Coviddata.coviddeaths`
+WHERE continent IS NOT null
+GROUP BY location
+ORDER BY peak_death_count DESC;
+
+-- Countries by the highest deaths per population
+
+SELECT
+location,
+MAX(total_deaths/population)*100 as deaths_percent,
+FROM `covidproject-450513.Coviddata.coviddeaths`
+WHERE continent IS NOT null
+GROUP BY location
+ORDER BY deaths_percent DESC;
+
+-- Continents by highest death count per population
+
+
+
+
+
+
+
+
+
