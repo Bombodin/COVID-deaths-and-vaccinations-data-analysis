@@ -2,19 +2,15 @@
 Data analysis project of COVID deaths and vaccinations for my portfolio
 
 ## Overview
-Goal of this project is to hone my data analysis skills through analysing the COVID deaths and vaccinations dataset to learn how effective the early vaccinations were in preventing new cases. I will be using some of the most popular tools for data analysis to clean, analyze and visualize the key takeaways form this dataset.
+Goal of this project is to hone my data analysis skills through analysing the COVID deaths and vaccinations dataset to learn how effective the early vaccinations were in preventing new cases in Finland compared to other countries. I will be using some of the most popular tools for data analysis to clean, analyze and visualize the key takeaways form this dataset.
 - **Source**: [https://docs.owid.io/projects/etl/api/covid/#download-data]
 - **Description**: [list of countries, population numbers, number of COVID cases and vaccinations from start of 2020 to end of april 2021]
 - **Format**: CSV
 
 ## Technologies Used
 - Google sheets
-- DBeaver
-- Python
-- Pandas
-- NumPy
-- Matplotlib / Seaborn
-- Jupyter Notebook
+- BigQuery
+- 
 
 ## Project Structure
 ```
@@ -26,11 +22,12 @@ Goal of this project is to hone my data analysis skills through analysing the CO
 ```
 
 ## Key Steps
-1. **Data Cleaning**: Handling missing values, duplicates, and inconsistent formats.
-2. **Exploratory Data Analysis (EDA)**: Identifying patterns, trends, and correlations.
-3. **Data Visualization**: Using charts and graphs for insights.
-4. **Modeling (if applicable)**: Applying statistical or machine learning models.
-5. **Conclusions**: Summarizing findings and potential next steps.
+1. **Data Cleaning**: We begin by cleaning the data, making sure it is accurate and usable. This is done in gogole sheets, using the clean data function eliminate duplicates and filters to find out possible empty fields. The data is found to be clean and no actions needed to be taken. All the data is then imported to Biqguery and verified to be functioning there.
+
+3. **Exploratory Data Analysis (EDA)**: Using sql queries, 
+4. **Data Visualization**: Using charts and graphs for insights.
+5. **Modeling (if applicable)**: Applying statistical or machine learning models.
+6. **Conclusions**: Summarizing findings and potential next steps.
 
 ## Results
 - [Summarize key findings]
