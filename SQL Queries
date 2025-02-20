@@ -16,17 +16,17 @@ SELECT
 FROM `covidproject-450513.Coviddata.coviddeaths`
 ORDER BY 1,2
 
--- Filters only for results from Finland and shows what percentage of infected people die
+-- Shows what percentage of infected people die
 
 SELECT
  date,
  total_cases,
  (total_cases/total_deaths)*100 as deaths_percentage
 FROM `covidproject-450513.Coviddata.coviddeaths`
-where location = "Finland"
+WHERE continent IS NOT null
 ORDER BY 1,2;
 
--- Percentage of infected people in Finland
+-- Percentage of infected people in population
 
 SELECT 
  date,
@@ -35,7 +35,7 @@ SELECT
  total_cases,
  (total_cases/population)*100 AS infected_percentage
 FROM `covidproject-450513.Coviddata.coviddeaths`
-WHERE location = "Finland"
+WHERE continent IS NOT null
 ORDER BY 1,2;
 
 -- Countries with highest infection rate compared to population
