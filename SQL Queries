@@ -183,13 +183,14 @@ order by 1,2
 
 CREATE VIEW `covidproject-450513.Coviddata.infections` AS 
 SELECT
+ date,
  location,
  population,
  MAX(total_cases) AS peak_infection_count,
  MAX((total_cases/population))*100 AS infected_percentage
 FROM `covidproject-450513.Coviddata.coviddeaths`
 WHERE continent IS NOT null
-GROUP BY location, population
+GROUP BY date, location, population
 ORDER BY infected_percentage DESC;
 
 
