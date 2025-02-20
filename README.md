@@ -2,7 +2,7 @@
 Data analysis project of COVID deaths and vaccinations for my portfolio
 
 ## Overview
-Goal of this project is to hone my data analysis skills through analysing the COVID deaths and vaccinations dataset to learn how effective the early vaccinations were in preventing new cases in Finland compared to other countries. I will be using some of the most popular tools for data analysis to clean, analyze and visualize the key takeaways form this dataset.
+Goal of this project is to hone my data analysis skills through analysing the COVID deaths and vaccinations dataset to learn how effective the vaccinations were in preventing the spread of infection and deaths. I will be using some of the most popular tools for data analysis to clean, analyze and visualize the key takeaways from this dataset.
 - **Source**: [https://docs.owid.io/projects/etl/api/covid/#download-data]
 - **Description**: [list of countries, population numbers, number of COVID cases and vaccinations from start of 2020 to end of april 2021]
 - **Format**: CSV
@@ -26,7 +26,7 @@ Goal of this project is to hone my data analysis skills through analysing the CO
 
 2. **Exploratory Data Analysis (EDA)**: Using sql queries, the data was parsed through and relevant queries were made into views for visualization and further analysis. The Queries used can be found in the SQL queries folder in this repository.
    
-5. **Data Visualization**: Using charts and graphs for insights.
+5. **Data Visualization**: 
 6. **Modeling (if applicable)**: Applying statistical or machine learning models.
 7. **Conclusions**: Summarizing findings and potential next steps.
 
