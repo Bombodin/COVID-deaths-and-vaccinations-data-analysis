@@ -1,5 +1,5 @@
 # COVID-deaths-and-vaccinations-data-analysis
-Data analysis project of COVID deaths and vaccinations for my portfolio
+Data analysis project of COVID deaths and vaccinations
 
 ## Overview
 Goal of this project is to hone my data analysis skills through analysing the COVID deaths and vaccinations dataset to learn how effective the vaccinations were in preventing the spread of infection, with focus on how Finland fared compared to other countries. I will be using some of the most popular tools for data analysis to clean, analyze and visualize the key takeaways from this dataset.
@@ -15,10 +15,10 @@ Goal of this project is to hone my data analysis skills through analysing the CO
 ## Project Structure
 ```
 📂 COVID-early-vaccinations-analysis
-│-- 📂 CovidDeaths.xlsx               # Raw data
-│-- 📂 CovidVaccinations.xlsx         # Raw data
-│-- README.md                          # Project documentation
-│-- SQL Queries                        # SQL queries used in project
+│-- CovidDeaths.xlsx               # Raw data
+│-- CovidVaccinations.xlsx         # Raw data
+│-- README.md                      # Project documentation
+│-- SQL Queries                    # SQL queries used in project
 ```
 
 ## Key Steps
@@ -28,19 +28,6 @@ Goal of this project is to hone my data analysis skills through analysing the CO
    
 3. Data Visualization: An interactive dashboard was created in Tableau: https://public.tableau.com/app/profile/juha.timonen/viz/Covidearlyvaccinationeffectdata/Dashboard1
 
-4. Conclusions: Summarizing findings and potential next steps.
+4. Conclusions: According on this data, there seems to be no correlation either way between early vaccination rate of a country and the infection rate. The results between countries vary massively and require more research with more varied data, as the variables used in this project could not come to a definitive conclusion.
 
-
-## Installation & Usage
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the analysis:
-   ```bash
-   jupyter notebook
-   ```
+ ```
